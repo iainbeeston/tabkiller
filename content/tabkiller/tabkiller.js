@@ -64,7 +64,7 @@ var TabKiller = {
 
 		this.killTabbrowser(document.getElementById('content'));
 
-		// 「すべてタブで開く」の項目を消す
+		// Delete the item "Open all tabs"
 		if (window.HistoryMenu &&
 			window.HistoryMenu.populateUndoSubmenu)
 			eval('window.HistoryMenu.populateUndoSubmenu = '+window.HistoryMenu.populateUndoSubmenu.toSource().replace(
@@ -287,12 +287,13 @@ var TabKiller = {
 		this.getTabs(gBrowser).some(function(aTab, aIndex) {
 			if (aTab == current) return false;
 			index = aIndex;
-			/*
-				セッションヒストリの項目数が1で且つlocationがabout:blankの時、
-				nsISessionStoreはそのタブを履歴に残さない。
-				つまり、これを逆手に取れば、「閉じたタブ」の履歴に残さずに
-				タブを閉じることが出来るというわけ。
-			*/
+                        // The number of items in the session history
+                        // is about and in one location is: When
+                        // blank, nsISessionStore do not leave in the
+                        // history tab. In other words, it takes
+                        // advantage of the fact, you are not left in the
+                        // history of the "closed tabs". I mean you
+                        // can close the tab.
 			aTab.linkedBrowser.contentWindow.location.replace('about:blank');
 			gBrowser.removeTab(aTab);
 			return true;
@@ -325,10 +326,14 @@ var TabKiller = {
 				window.setTimeout(function() {
 					tabs.forEach(function(aTab, aIndex) {
 						if (aIndex == index) return;
-						/*
-							このタブは元のウィンドウのタブの複製で、セッションヒストリに
-							複数の項目を含んでいる可能性がある。
-							なので、セッションヒストリをすべて消してから閉じる。
+                                                  // A duplicate of
+                                                  // the original tab of the
+                                                  // window, this tab is in
+                                                  // the session history
+                                                  // may contain more than one
+                                                  // item. So I turn
+                                                  // off and close all the
+                                                  // sessions history.
 						*/
 						try {
 							if (aTab.linkedBrowser.sessionHistory)
