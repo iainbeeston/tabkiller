@@ -1,4 +1,3 @@
-pref("extensions.tabkiller.disabled", false);
 // -1: always ask
 //  0: redirect actions for current tab
 //  1: redirect actions for windows

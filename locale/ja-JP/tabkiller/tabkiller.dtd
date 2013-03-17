@@ -1,7 +1,6 @@
 <!ENTITY config.title        "タブキラーの設定">
 
 <!ENTITY config.tab.general  "全般">
-<!ENTITY config.disabled     "タブキラーを無効にする（再起動後から反映）">
 <!ENTITY config.tabs.open.behavior         "新しいタブを開く要求が行われた時：">
 <!ENTITY config.tabs.open.behavior.ask     "要求をどのように扱うかその都度確認する">
 <!ENTITY config.tabs.open.behavior.current "開こうとしたURIを現在のウィンドウに読み込む">

@@ -1,7 +1,6 @@
 <!ENTITY config.title             "Tab Killer - beállítások">
 <!ENTITY config.tab.general       "Általános">
 
-<!ENTITY config.disabled "Tab Killer letiltása (újraindítás szükséges)">
 <!ENTITY config.tabs.open.behavior         "Ha új lap megnyitására kerülne sor">
 <!ENTITY config.tabs.open.behavior.ask     "Kérdezzen rá a végrehajtandó műveletre">
 <!ENTITY config.tabs.open.behavior.current "Oldal címének betöltése a jelenlegi ablakba">

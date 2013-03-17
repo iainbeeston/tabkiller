@@ -1,7 +1,6 @@
 <!ENTITY config.title             "Configuration de Tab Killer">
 <!ENTITY config.tab.general       "Général">
 
-<!ENTITY config.disabled "Désactiver Tab Killer (nécessite un redémarrage)">
 <!ENTITY config.tabs.open.behavior         "When new tab is requrested to be opened">
 <!ENTITY config.tabs.open.behavior.ask     "Ask me how to treat the request">
 <!ENTITY config.tabs.open.behavior.current "Load requested URI into the current window">

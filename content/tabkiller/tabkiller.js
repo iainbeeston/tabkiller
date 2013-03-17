@@ -62,12 +62,6 @@ var TabKiller = {
 	{
 		window.removeEventListener('load', this, false);
 
-		if (this.getPref('extensions.tabkiller.disabled')) {
-			aTabBrowser.__tabkiller__initialized = true;
-			document.documentElement.removeAttribute('tabkiller-enabled');
-			return;
-		}
-
 		this.killTabbrowser(document.getElementById('content'));
 
 		// 「すべてタブで開く」の項目を消す

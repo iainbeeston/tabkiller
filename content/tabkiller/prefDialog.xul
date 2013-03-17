@@ -10,9 +10,6 @@
 
 <prefpane id="prefpane-general" label="&config.tab.general;">
 	<preferences>
-		<preference id="extensions.tabkiller.disabled"
-			name="extensions.tabkiller.disabled"
-			type="bool"/>
 		<preference id="extensions.tabkiller.tabs.open.behavior"
 			name="extensions.tabkiller.tabs.open.behavior"
 			type="int"/>
@@ -21,9 +18,6 @@
 			type="int"/>
 	</preferences>
 
-	<checkbox label="&config.disabled;"
-		id="extensions.tabkiller.disabled-check"
-		preference="extensions.tabkiller.disabled"/>
 	<groupbox orient="vertical">
 		<caption label="&config.tabs.open.behavior;"/>
 		<radiogroup orient="vertical"
