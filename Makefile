@@ -53,7 +53,8 @@ xpi_built := install.rdf \
              $(wildcard content/tabkiller/*.js) \
              $(wildcard content/tabkiller/*.xul) \
              $(wildcard content/tabkiller/*.xml) \
-             $(wildcard content/tabkiller/*.css) \
+             $(wildcard skin/tabkiller/*.css) \
+             $(wildcard skin/tabkiller/*.png) \
              $(wildcard defaults/preferences/*.js) \
              $(wildcard locale/*/tabkiller/*.dtd) \
              $(wildcard locale/*/tabkiller/*.css) \
