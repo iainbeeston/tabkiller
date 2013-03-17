@@ -5,16 +5,14 @@ var TabKiller = {
 	BEHAVIOR_REDIRECT_TO_WINDOW  : 1,
 	BEHAVIOR_IGNORE              : 2,
 
-	get strbundle()
-	{
+	get strbundle() {
 		if (!this._strbundle)
 			this._strbundle = document.getElementById('tabkiller_bundle');
 		return this._strbundle;
 	},
 	_strbundle : null,
 
-	get PromptService()
-	{
+	get PromptService() {
 		if (!this._PromptService)
 			this._PromptService = Components
 					.classes['@mozilla.org/embedcomp/prompt-service;1']
@@ -23,8 +21,7 @@ var TabKiller = {
 	},
 	_PromptService : null,
 
-	getTabs : function(aTabBrowser)
-	{
+	getTabs : function(aTabBrowser) {
 		var tabs = aTabBrowser.ownerDocument.evaluate(
 				'descendant::*[local-name()="tab"]',
 				aTabBrowser.mTabContainer,
@@ -33,33 +30,28 @@ var TabKiller = {
 				null
 			);
 		var array = [];
-		for (var i = 0, maxi = tabs.snapshotLength; i < maxi; i++)
-		{
+		for (var i = 0, maxi = tabs.snapshotLength; i < maxi; i++) {
 			array.push(tabs.snapshotItem(i));
 		}
 		return array;
 	},
 
-	getTabStrip : function(aTabBrowser) 
-	{
+	getTabStrip : function(aTabBrowser) {
 		var strip = aTabBrowser.mStrip;
 		return (strip && strip.localName == 'hbox') ?
 				strip :
 				aTabBrowser.tabContainer.parentNode;
 	},
 
-	stopRendering : function() 
-	{
+	stopRendering : function() {
 		window['piro.sakura.ne.jp'].stopRendering.stop();
 	},
-	startRendering : function() 
-	{
+	startRendering : function() {
 		window['piro.sakura.ne.jp'].stopRendering.start();
 	},
 
 
-	init : function()
-	{
+	init : function() {
 		window.removeEventListener('load', this, false);
 
 		this.killTabbrowser(document.getElementById('content'));
@@ -96,8 +88,7 @@ var TabKiller = {
 		document.documentElement.setAttribute('tabkiller-enabled', true);
 	},
 
-	killTabbrowser : function(aTabBrowser)
-	{
+	killTabbrowser : function(aTabBrowser) {
 		if ('__tabkiller__initialized' in aTabBrowser) return;
 
 		var tabs = this.getTabs(aTabBrowser);
@@ -113,8 +104,7 @@ var TabKiller = {
 		aTabBrowser.__tabkiller__originalAddTab    = aTabBrowser.addTab;
 		aTabBrowser.__tabkiller__originalRemoveTab = aTabBrowser.removeTab;
 
-		aTabBrowser.addTab = function(aURI, aReferrer, aCharset)
-		{
+		aTabBrowser.addTab = function(aURI, aReferrer, aCharset) {
 			var sv = TabKiller;
 			if (sv.tempDisabled) {
 				return this.__tabkiller__originalAddTab.apply(this, arguments);
@@ -132,22 +122,21 @@ var TabKiller = {
 			return aTab;
 		};
 		aTabBrowser.setStripVisibilityTo = function(aShow) {};
-		aTabBrowser.getStripVisibility = function() { return false; }
+		aTabBrowser.getStripVisibility = function() { return false; };
 
-		aTabBrowser.mTabContainer.mTabstrip.scrollByIndex = function() {}
-		aTabBrowser.mTabContainer.mTabstrip.scrollByPixels = function() {}
-		aTabBrowser.mTabContainer.mTabstrip._autorepeatbuttonScroll = function() {}
-		aTabBrowser.mTabContainer.mTabstrip._smoothScrollByPixels = function() {}
-		aTabBrowser.mTabContainer.mTabstrip._startScroll = function() {}
+		aTabBrowser.mTabContainer.mTabstrip.scrollByIndex = function() {};
+		aTabBrowser.mTabContainer.mTabstrip.scrollByPixels = function() {};
+		aTabBrowser.mTabContainer.mTabstrip._autorepeatbuttonScroll = function() {};
+		aTabBrowser.mTabContainer.mTabstrip._smoothScrollByPixels = function() {};
+		aTabBrowser.mTabContainer.mTabstrip._startScroll = function() {};
 
 		aTabBrowser.__tabkiller__initialized = true;
 	},
 
-	performTabOpenRequest : function(aTabBrowser, aURI, aReferrer, aCharset)
-	{
+	performTabOpenRequest : function(aTabBrowser, aURI, aReferrer, aCharset) {
 		var referrer = null,
 			charset = null;
-		if (aReferrer && typeof aReferrer == 'object') {
+		if (aReferrer && typeof aReferrer === 'object') {
 			if (aReferrer instanceof Components.interfaces.nsIURI) {
 				referrer = aReferrer;
 				charset = aCharset;
@@ -157,8 +146,7 @@ var TabKiller = {
 				charset = aReferrer.charset;
 			}
 		}
-		switch (this.getBehaviorForRequest('open', aURI))
-		{
+		switch (this.getBehaviorForRequest('open', aURI)) {
 			case this.BEHAVIOR_REDIRECT_TO_WINDOW:
 				window.openDialog(location.href, '_blank', 'chrome,all,dialog=no', aURI, charset, referrer);
 				break;
@@ -171,10 +159,8 @@ var TabKiller = {
 		}
 	},
 
-	performTabCloseRequest : function(aTabBrowser, aTab)
-	{
-		switch (this.getBehaviorForRequest('close'))
-		{
+	performTabCloseRequest : function(aTabBrowser, aTab) {
+		switch (this.getBehaviorForRequest('close')) {
 			case this.BEHAVIOR_REDIRECT_TO_WINDOW:
 				if ('TryToCloseWindow' in window)
 					window.TryToCloseWindow();
@@ -192,8 +178,7 @@ var TabKiller = {
 		}
 	},
 
-	getBehaviorForRequest : function(aType)
-	{
+	getBehaviorForRequest : function(aType) {
 		var behavior = this.getPref('extensions.tabkiller.tabs.'+aType+'.behavior');
 		if (behavior != this.BEHAVIOR_ASK) return behavior;
 
@@ -214,8 +199,7 @@ var TabKiller = {
 				strbundle.getString('tab_'+aType+'_behavior_window'),
 				strbundle.getString('tab_'+aType+'_behavior_never'),
 				check
-			))
-		{
+			)) {
 			case 0: behavior = this.BEHAVIOR_REDIRECT_TO_CURRENT; break;
 			case 1: behavior = this.BEHAVIOR_IGNORE; break;
 			case 2: behavior = this.BEHAVIOR_REDIRECT_TO_WINDOW; break;
@@ -226,16 +210,14 @@ var TabKiller = {
 		return behavior;
 	},
 
-	addWindowToUndoCache : function()
-	{
+	addWindowToUndoCache : function() {
 		const WindowManager = Components
 				.classes['@mozilla.org/appshell/window-mediator;1']
 				.getService(Components.interfaces.nsIWindowMediator);
 		var targets = WindowManager.getEnumerator('navigator:browser', true),
 			target,
 			windows = [];
-		while (targets.hasMoreElements())
-		{
+		while (targets.hasMoreElements()) {
 			target = targets.getNext().QueryInterface(Components.interfaces.nsIDOMWindowInternal);
 			if (target != window)
 				windows.push(target);
@@ -270,8 +252,7 @@ var TabKiller = {
 		}, this);
 	},
 
-	restoreWindowFromUndoCache : function(aWindow, aIndex)
-	{
+	restoreWindowFromUndoCache : function(aWindow, aIndex) {
 		this.stopRendering();
 		this.disable();
 
@@ -334,7 +315,6 @@ var TabKiller = {
                                                   // item. So I turn
                                                   // off and close all the
                                                   // sessions history.
-						*/
 						try {
 							if (aTab.linkedBrowser.sessionHistory)
 								aTab.linkedBrowser.sessionHistory.PurgeHistory(aTab.linkedBrowser.sessionHistory.count);
@@ -360,8 +340,7 @@ var TabKiller = {
 		}, false);
 	},
 
-	disable : function()
-	{
+	disable : function() {
 		this.tempDisabled = true;
 		var strip = this.getTabStrip(gBrowser);
 		strip.collapsed = false;
@@ -371,8 +350,7 @@ var TabKiller = {
 		strip.style.maxHeight = '0 !important';
 	},
 
-	enable : function()
-	{
+	enable : function() {
 		this.tempDisabled = false;
 		var strip = this.getTabStrip(gBrowser);
 		window.setTimeout(function() {
@@ -381,10 +359,8 @@ var TabKiller = {
 		}, 0);
 	},
 
-	handleEvent : function(aEvent)
-	{
-		switch (aEvent.type)
-		{
+	handleEvent : function(aEvent) {
+		switch (aEvent.type) {
 			case 'load':
 				this.init();
 				break;
