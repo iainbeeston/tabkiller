@@ -1,153 +1,156 @@
-========================================================================
-            ƒ^ƒuƒLƒ‰[ for Netscape 7 & Mozilla & Firefox
-========================================================================
-[–¼Ì       ] ƒ^ƒuƒLƒ‰[ for Netscape 7 & Mozilla & Firefox
-[ƒo[ƒWƒ‡ƒ“ ] 1.0.2005012901
-[í•Ê       ] ƒtƒŠ[ƒ\ƒtƒgƒEƒFƒA
-[§ìÒ     ] Piro(‰º“c —mu)
-[ÅIXV   ] 2005/1/29
-[ˆ³kŒ`®   ] LHA
-[“®ìŠÂ‹«   ] Netscape 7.0 ˆÈã‚ ‚é‚¢‚ÍMozilla 1.0 ˆÈã‚ª“®ì‚·‚éŠÂ‹«B
-              “–•û‚Å‚ÍWindows2000ã‚ÅANetscape 7.1, Mozilla 1.7,
-              ÅV‚ÌNightly Build, Mozilla Firefox 1.0 ‚É‚Ä“®ì‚ÌŠm”F‚ğ
-              s‚Á‚Ä‚¢‚Ü‚·B
-
-[“]Ú/Ä”z•z] –³’f“]ÚEÄ”z•z‚Í©—R‚És‚Á‚Ä‚¢‚½‚¾‚¢‚Ä\‚¢‚Ü‚¹‚ñB‰ü‘¢‚µ
-              ‚½‚à‚Ì‚ğŒöŠJ‚·‚é‚±‚Æ‚à§ŒÀ‚µ‚Ü‚¹‚ñB‚½‚¾‚µƒNƒŒƒWƒbƒg‚ÍŒ³‚Ì
-              ‚à‚Ì‚ğc‚·‚æ‚¤‚É‚µ‚Ä‚­‚¾‚³‚¢B
-              ‚±‚ÌƒpƒbƒP[ƒW‚ÉŠÜ‚Ü‚ê‚éƒR[ƒh‚Ì–w‚Ç‚Í MPL 1.1, GPL 2.0,
-              ‚¨‚æ‚Ñ LGPL 2.1 ‚ÌƒgƒŠƒvƒ‹ƒ‰ƒCƒZƒ“ƒX‚Æ‚È‚Á‚Ä‚¢‚Ü‚·‚Ì‚ÅA
-              ‚±‚ê‚ç‚Ì“_‚É‚Â‚¢‚Ä‚ÍA‚»‚ê‚¼‚ê‚Ìƒ‰ƒCƒZƒ“ƒX‚ÌğŒ‚É]‚Á‚Ä‰º
-              ‚³‚¢B
-              ‚È‚¨A‘Ğ‚Ì•t˜^CD-ROM‚âƒ\ƒtƒgƒEƒFƒA“™‚Öû˜^‚µ‚Ä‚¢‚½‚¾‚¯‚é
-              ê‡‚ÍA•K‚¸–‘O‚É‚²˜A—‰º‚³‚¢B
-
-[’˜ìŒ      ] ‚±‚ÌƒpƒbƒP[ƒW‚ÉŠÜ‚Ü‚ê‚éƒvƒƒOƒ‰ƒ€‚Ì’˜ìŒ ‚ÍPiro(‰º“c —m
-              u)‚ª•Û—L‚µ‚Ü‚·B‘½•ªB
-              ‚Ä‚¢‚¤‚©ƒvƒƒOƒ‰ƒ€‚É’˜ìŒ ‚Á‚Ä”F‚ß‚ç‚ê‚é‚ñ‚¾‚Á‚¯H ‚µ‚©‚à
-              UI‚ÍXML‚¾‚µB•¶‘ƒCƒ“ƒXƒ^ƒ“ƒX‚Ìƒ}[ƒNƒAƒbƒv‚É’˜ìŒ ‚Í”­¶
-              ‚µ‚È‚¢‚Æ‚¢‚¤‚Ì‚ªŒö‚ÌŒ©‰ğ‚¾‚Á‚½‚æ‚¤‚È‹C‚àcc
-
-[˜A—æ     ] piro.outsider.reflex@gmail.com
-[”z•zŒ³     ] http://piro.sakura.ne.jp/
-              http://hp.vector.co.jp/authors/VA016061/
+Note: Below is the original readme.txt, translated from japanese using google translate.
 
 
 ========================================================================
-––ÚŸ
+Â Â Â Â Â Â Â Â Â Â Â Â Tabukira for Netscape 7 & Mozilla & Firefox
+========================================================================
+Tabukira for Netscape [name] 7 & Mozilla & Firefox
+[Version] 1.0.2005012901
+Free Software [Type]
+Piro [the author] (Hiroshi Shimoda)
+2005/1/29 [Last Update]
+LHA [compression format]
+Mozilla 1.0 or higher environment to work more or Netscape 7.0 [Operating Environment].
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â In me on Windows2000, Netscape 7.1, Mozilla 1.7,
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Check the operation of the latest Nightly Build, in Mozilla Firefox 1.0
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Going.
 
-  Eƒwƒbƒ_
-  E–ÚŸ
-  Eƒtƒ@ƒCƒ‹\¬
-  EĞ‰î
-  EƒCƒ“ƒXƒg[ƒ‹è‡
-  EƒAƒ“ƒCƒ“ƒXƒg[ƒ‹è‡
-  EÓ«
-  E–ÆÓ
-  EXV—š—ği”²ˆj
+Unauthorized reproduction or re-distribution [redistribute it and / or reprint] You can safely go to you for free. Remodel
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â I do not limit what I can publish. However, the original credit
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Please do leave things.
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Most of the code that is included in this package MPL 1.1, GPL 2.0,
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Because it has become a triple of the LGPL 2.1 license, and
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â These issues, in accordance with the terms of the license under each
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Again.
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â In addition, such software can be recorded to the appendix to the Book and CD-ROM
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Case, please contact us beforehand.
+
+Piro copyright of the programs included [Copyright] This package Hiroshi Shimoda (
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â ) I held minded. Maybe.
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â What did I copyright can be seen in the program I mean? Furthermore
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â The soup UI XML. Copyright occur in the markup of the document instance
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â I think that's also not like was the view of the public ......
+
+Piro.outsider.reflex @ gmail.com [Contact]
+Http://piro.sakura.ne.jp/ [distributor]
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â http://hp.vector.co.jp/authors/VA016061/
 
 
 ========================================================================
-–ƒtƒ@ƒCƒ‹\¬
+* Table of Contents
 
-  Ereadme.txt   : æˆµà–¾(‚±‚Ìƒtƒ@ƒCƒ‹)
-  Etabkiller.xpi: XPInstall Package–{‘Ì
-
- ¦‚Ç‚¿‚ç‚àAƒCƒ“ƒXƒg[ƒ‹Œã‚Ííœ‚µ‚Ä‚©‚Ü‚¢‚Ü‚¹‚ñB
-
-
-========================================================================
-–Ğ‰î
-
-Moz/NS7/Mozilla Firefox‚Ìƒ^ƒuƒuƒ‰ƒEƒWƒ“ƒO‹@”\‚ğ–³Œø‰»‚µ‚Ü‚·BMozilla‚ğ
-SDI‚Ìƒuƒ‰ƒEƒU‚Æ‚µ‚Äg‚¢‚½‚¢ê‡‚É‚Ç‚¤‚¼B
-İ’è‚ÍAdvancediÚ×jƒJƒeƒSƒŠ‚Ì’†‚ÌuTab Killeriƒ^ƒuƒLƒ‰[jvƒpƒlƒ‹
-‚Ås‚¦‚Ü‚·B
+Â Â Header
+Â Â Table of contents
+Â Â Configuration and file
+Â Â Introduction
+Â Â Installation procedures and
+Â Â Procedures and uninstall
+Â Â Acknowledgments
+Â Â Â· Disclaimer
+Â Â Â· Update History (excerpt)
 
 
 ========================================================================
-–ƒCƒ“ƒXƒg[ƒ‹è‡
+* Configuration file
 
-  +-----------------------------------------------------------------+
-  | ¦‹Œƒo[ƒWƒ‡ƒ“‚©‚ç‚ÌXV‚Ìê‡AƒCƒ“ƒXƒg[ƒ‹‚ğn‚ß‚é‘O‚ÉA•K    |
-  |   ‚¸AŸ€‚ÌuƒAƒ“ƒCƒ“ƒXƒg[ƒ‹è‡v‚É]‚Á‚Ä‹Œƒo[ƒWƒ‡ƒ“‚ğƒA    |
-  |   ƒ“ƒCƒ“ƒXƒg[ƒ‹‚µ‚Ä‚¨‚¢‚Ä‰º‚³‚¢B‹Œƒo[ƒWƒ‡ƒ“‚Ìƒtƒ@ƒCƒ‹‚ªc‚Á  |
-  |   ‚Ä‚¢‚éê‡A“±“ü‚É¸”s‚µ‚½‚èANS/Moz‚Ì“®ì‚Éxá‚ªo‚éê‡    |
-  |   ‚ª‚ ‚è‚Ü‚·B                                                  |
-  | ¦ƒCƒ“ƒXƒg[ƒ‹‚ğs‚¤‘O‚ÉAPreferencesiİ’èj >                 |
-  |   AdvancediÚ×j > Software Installationiƒ\ƒtƒgƒEƒFƒA‚ÌƒC    |
-  |   ƒ“ƒXƒg[ƒ‹j‚ÅuEnable software installationiƒ\ƒtƒgƒEƒFƒA    |
-  |   ‚ÌƒCƒ“ƒXƒg[ƒ‹‚ğ‰Â”\‚É‚·‚éjv‚Éƒ`ƒFƒbƒN‚ğ“ü‚ê‚Ä‰º‚³‚¢B      |
-  | ¦Mozilla 1.3ˆÈ‘O‚Å‚ÍAŠÇ—ÒŒ ŒÀ‚Å‚È‚¢‚ÆƒCƒ“ƒXƒg[ƒ‹‚Å‚«‚Ü‚¹   |
-  |   ‚ñB“±“ü‚Í•K‚¸Aroot‚ ‚é‚¢‚Íadmin‚ÅƒƒOƒIƒ“‚µ‚Äs‚Á‚Ä‰º‚³‚¢B |
-  +-----------------------------------------------------------------+
+Â Â Â· Readme.txt: (this file) Instruction
+Â Â Â· Tabkiller.xpi: body XPInstall Package
 
-step1: ƒtƒ@ƒCƒ‹‚ÌƒRƒs[
-  tabkiller.xpi‚ğƒuƒ‰ƒEƒU‚ÌƒEƒBƒ“ƒhƒE‚Éƒhƒƒbƒv‚·‚é‚ÆAƒCƒ“ƒXƒg[ƒ‹
-  ‚ªŠJn‚³‚ê‚Ü‚·B
-  “r’†A“ú–{Œê‚ÌŒ¾ŒêƒpƒbƒN‚ğ“o˜^‚·‚é‚©‚Ç‚¤‚©‚ÌŠm”F‚ª‚ ‚é‚Ì‚ÅA•K—v‚É‰‚¶
-  ‚Ä‘I‘ğ‚µ‚Ä‰º‚³‚¢B
-
-step2: NS/Moz‚ÌÄ‹N“®
-  ƒtƒ@ƒCƒ‹‚ÌƒRƒs[‚ªI‚í‚Á‚½‚çANS/Moz‚ğÄ‹N“®‚µ‚Ü‚·B
-  ƒRƒs[‚µ‚½ƒtƒ@ƒCƒ‹ŒQ‚ªA‹N“®‚ÉNS/Moz‚É“o˜^‚³‚ê‚Ü‚·B
+Â â€» Both can be deleted after installation.
 
 
 ========================================================================
-–ƒAƒ“ƒCƒ“ƒXƒg[ƒ‹‚Ìè‡
+* Introduction
 
-Preferencesiİ’èj > AdvancediÚ×j > Tab Killeriƒ^ƒuƒLƒ‰[j‚Å
-uUninstalliƒAƒ“ƒCƒ“ƒXƒg[ƒ‹jv‚Æ‘‚©‚ê‚½ƒ{ƒ^ƒ“‚ğƒNƒŠƒbƒN‚·‚é‚ÆA
-©“®‚ÅƒAƒ“ƒCƒ“ƒXƒg[ƒ‹‚ªs‚í‚ê‚Ü‚·B
-
-‚È‚¨Aƒtƒ@ƒCƒ‹‚Ìíœ‚Í©“®‚Å‚Ís‚í‚ê‚Ü‚¹‚ñB•\¦‚³‚ê‚éƒƒbƒZ[ƒW‚É]‚Á
-‚ÄAƒuƒ‰ƒEƒU‚ğI—¹‚³‚¹‚½Œã‚ÉAw’è‚³‚ê‚½ƒtƒ@ƒCƒ‹‚ğè“®‚Åíœ‚µ‚Ä‰º‚³‚¢B
-
-
-ƒuƒ‰ƒEƒU©‘Ì‹N“®‚Å‚«‚È‚¢‚È‚Ç‚Ì‹Ù‹}‚Ìê‡‚É‚ÍAˆÈ‰º‚Ìè‡‚É]‚Á‚ÄAè“®
-‚ÅƒAƒ“ƒCƒ“ƒXƒg[ƒ‹‚ğs‚Á‚Ä‰º‚³‚¢B
-
-  1. NS/Moz ‚ğI—¹‚³‚¹‚éBŠÈˆÕ‹N“®i‚‘¬‹N“®j‚ª—LŒø‚É‚È‚Á‚Ä‚¢‚éê‡A
-     ƒ^ƒXƒNƒgƒŒƒC‚ÌƒAƒCƒRƒ“‚ğ‰EƒNƒŠƒbƒN‚µ‚ÄA‚»‚¿‚ç‚àI—¹‚³‚¹‚éB
-  2. ƒ†[ƒU[ƒvƒƒtƒ@ƒCƒ‹ƒfƒBƒŒƒNƒgƒŠ‚©A NS/Moz ‚ğƒCƒ“ƒXƒg[ƒ‹‚µ‚½
-     ƒfƒBƒŒƒNƒgƒŠiŠÇ—ÒŒ ŒÀ‚ÅƒCƒ“ƒXƒg[ƒ‹‚µ‚½ê‡j‚Ì’†‚É‚ ‚é
-     /chrome/ ƒtƒHƒ‹ƒ_‚©‚çA tabkiller.jar, overlayinfo ƒfƒBƒŒƒNƒgƒŠ,
-     chrome.rdf ‚ğíœ‚·‚éB
-  3. ŠÇ—ÒŒ ŒÀ‚ÅƒCƒ“ƒXƒg[ƒ‹‚µ‚½ê‡Ainstalled-chrome.txt ‚ğƒƒ‚’ “™
-     ‚ÅŠJ‚«AˆÈ‰º‚Ìs‚ğíœ‚·‚éB
-     Econtent,install,url,jar:resource:/chrome/tabkiller.jar!
-                           /content/tabkiller/
-     Elocale,install,url,jar:resource:/chrome/tabkiller.jar!
-                           /locale/en-US/tabkiller/
-    (Elocale,install,url,jar:resource:/chrome/tabkiller.jar!
-                           /locale/ja-JP/tabkiller/)
-
-‚±‚Ìè‡‚Å‚Íİ’èî•ñ‚È‚Ç‚ªc‚Á‚½‚Ü‚Ü‚É‚È‚è‚Ü‚·‚ªAƒuƒ‰ƒEƒU‚ğg—p‚·‚éã
-‚Å‚Í–â‘è‚ ‚è‚Ü‚¹‚ñB
+Disable the tabbed browsing feature of Moz/NS7/Mozilla Firefox. The Mozilla
+Try it if I want to use as a browser SDI.
+Advanced settings in the category (see details) "Tab Killer (Tabukira)" Panel
+I can at.
 
 
 ========================================================================
-––ÆÓ
+* Installation Instructions
 
-‚±‚ÌƒpƒbƒP[ƒW‚ğg—p‚µ‚½–‚É‚æ‚è”­¶‚µ‚½‚¢‚©‚È‚éáŠQ‚É‘Î‚µ‚Ä‚àA§ìÒ
-‚ÍˆêØ‚ÌÓ”C‚ğ‚¿‚Ü‚¹‚ñB‘S‚Äg—pÒ‚ÌŒÂl‚ÌÓ”C‚ÉŠî‚Ã‚­‚à‚Ì‚Æ‚µ‚Ü‚·B
+Â Â + ------------------------------------------------- ---------------- +
+Â Â | â€» When updating from a previous version, before you begin the installation, you need |
+Â Â | First, access the previous version according to the "uninstall procedure" on the next page |
+Â Â | Be sure to uninstall. Files remain from a previous version |
+Â Â | If you have, or if you fail to introduce, it will be a hindrance to the operation of the NS / Moz |
+Â Â | There is. |
+Â Â | â€» Before you install, Preferences (Settings)> |
+Â Â | Lee Advanced> Software Installation (details) (Software |
+Â Â | "Enable software installation on the installation) (Software |
+Â Â | Please check in) "to allow for the installation of. |
+Â Â | â€» Mozilla 1.3 and earlier, you can install and not the administrator |
+Â Â | I ã‚“. Always, the introduction should be made to log on with admin or root. |
+Â Â + ------------------------------------------------- ---------------- +
+
+copy of the file: step1
+Â Â When you drop a browser window tabkiller.xpi, installation
+Â Â I is started.
+Â Â Along the way, because there is a confirmation of whether or not to register the Japanese language pack, if necessary
+Â Â Please select Te.
+
+Restarting the NS / Moz: step2
+Â Â When you have finished copying the files, I will restart the NS / Moz.
+Â Â Group the copied file is registered in the NS / Moz at startup.
 
 
 ========================================================================
-–XV—š—ği”²ˆj
+* Uninstall procedure
+
+Preferences> Advanced (Settings)> Tab Killer (more) and (Tabukira)
+When you click on the button labeled "Uninstall (uninstall)" and
+Uninstall is performed automatically.
+
+In addition, the deletion of files are not automatically performed. Follow the prompts
+After Te, was to quit the browser, you must manually delete the specified file.
+
+
+Follow these steps, in case of an emergency, such as the browser itself can not be started, you must manually
+Please uninstall on.
+
+Â Â To terminate the 1. NS / Moz. If you enable the Quick Launch is (fast start),
+Â Â Â Â Â Right-click the icon in the task tray and exit too.
+Â Â Or 2. User profile directory, install the NS / Moz
+Â Â Â Â Â Located in (if you install as administrator) directory
+Â Â Â Â Â From / chrome / folder, tabkiller.jar, overlayinfo directory,
+Â Â Â Â Â Remove the chrome.rdf.
+Â Â If you install with administrator privileges 3., Notepad, etc. installed-chrome.txt
+Â Â Â Â Â Open it in, delete the following lines.
+Â Â Â Â Â Â· Content, install, url, jar: resource :/ chrome / tabkiller.jar!
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â / Content / tabkiller /
+Â Â Â Â Â Â· Locale, install, url, jar: resource :/ chrome / tabkiller.jar!
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â / Locale / en-US / tabkiller /
+Â Â Â Â (Â· Locale, install, url, jar: resource :/ chrome / tabkiller.jar!
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â / Locale / ja-JP / tabkiller /)
+
+Although this procedure will remain and configuration information, use the browser on
+There is no issue with.
+
+
+========================================================================
+* Disclaimer
+
+Against any failure that may occur due to the use of this package, the author
+I do not have any responsibility. Shall be based on the personal responsibility of all use.
+
+
+========================================================================
+* Update History (excerpt)
 
 1.0.2005012901
-    EÅV‚ÌMozilla‚Åƒuƒ‰ƒEƒU‚ÌChrome URL‚ğæ“¾‚Å‚«‚È‚¢–â‘è‚ğC³
+Â Â Â Â Â· Fixed a problem that you can not get the latest Mozilla Chrome URL in the browser
 1.0.20040411
-    E‰B‚·ƒƒjƒ…[€–Ú‚É‚Â‚¢‚Ä‚Ìw’è‚ğ­‚µC³
-    Eƒ^ƒuƒLƒ‰[‚ª–³Œø‚È‚É‚Ü‚Åƒƒjƒ…[€–Ú‚ª‰B‚³‚ê‚Ä‚µ‚Ü‚¤–â‘è‚ğC³
+Â Â Â Â - Fixed a little specifications for the menu item to hide
+Â Â Â Â Â· Fixed an issue where the menu items Tabukira being obscured until when invalid
 1.0.20040123
-    Eİ’è‰æ–Ê‚©‚çƒ^ƒuƒLƒ‰[‚ğ–³Œø‚É‚Å‚«‚é‚æ‚¤‚É‚µ‚½
+Â Â Â Â Â· I was able to disable the setting screen Tabukira
 1.0.20040117
-    EŒöŠJ
-    Eİ’è‰æ–Ê‚ğ•\¦‚Å‚«‚È‚¢–â‘è‚ğC³
+Â Â Â Â Disclosure and
+Â Â Â Â Â· Fixed an issue that can not display the setup screen
 
 
-------------------------------------------------------------------------
+-------------------------------------------------- ----------------------
 Tab Killer for NS7 & Moz & Firefox
-Copyright 2004-2005 Piro(YUKI "Piro" Hiroshi)
+Copyright 2004-2005 Piro (YUKI "Piro" Hiroshi)
