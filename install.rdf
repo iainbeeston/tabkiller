@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
-         xmlns:NC="http://home.netscape.com/NC-rdf#"
-         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <RDF:Description RDF:about="urn:mozilla:install-manifest"
-                   em:id="{4C65E837-7234-4b19-BBC4-A48C08346004}"
-                   em:name="Tab Killer"
-                   em:version="2.0.2009110201"
-                   em:creator="YUKI &quot;Piro&quot; Hiroshi"
-                   em:description="Disables tabbed browsing features of Mozilla completely."
-                   em:homepageURL="http://piro.sakura.ne.jp/xul/_tabkiller.html.en"
-                   em:iconURL="chrome://tabkiller/content/icon32.png"
-                   em:optionsURL="chrome://tabkiller/content/prefDialog.xul"
-                   em:type="2">
-	<em:translator>Jean-Bernard Marcon</em:translator>
-	<em:translator>Leszek (teo) Życzkowski</em:translator>
-	<em:translator>Mikes Kaszmán István</em:translator>
+<RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+  xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>tabkiller@iainbeeston.com</em:id>
+    <em:name>Tab Killer</em:name>
+    <em:version>3.0</em:version>
+    <em:creator>YUKI &quot;Piro&quot; Hiroshi</em:creator>
+    <em:description>Disables tabbed browsing features of Mozilla completely.</em:description>
+    <em:homepageURL>http://piro.sakura.ne.jp/xul/_tabkiller.html.en</em:homepageURL>
+    <em:iconURL>chrome://tabkiller/content/tabkiller/icon32.png</em:iconURL>
+    <em:optionsURL>chrome://tabkiller/content/prefDialog.xul</em:optionsURL>
+    <em:type>2</em:type>
+    <em:translator>Jean-Bernard Marcon</em:translator>
+    <em:translator>Leszek (teo) Życzkowski</em:translator>
+    <em:translator>Mikes Kaszmán István</em:translator>
 
 
     <em:updateURL>http://piro.sakura.ne.jp/xul/update.rdf</em:updateURL>
@@ -22,51 +21,41 @@
 
 
     <em:localized>
-      <RDF:Description em:locale="en-US"
-                       em:name="Tab Killer"
-                       em:description="Completely disables tabbed browsing feature of Firefox."
-                       em:homepageURL="http://piro.sakura.ne.jp/xul/_tabkiller.html.en"/>
-		<em:translator>Jean-Bernard Marcon</em:translator>
-		<em:translator>Leszek (teo) Życzkowski</em:translator>
-		<em:translator>Mikes Kaszmán István</em:translator>
+      <Description>
+        <em:locale>en-US</em:locale>
+        <em:name>Tab Killer</em:name>
+        <em:description>Completely disables tabbed browsing feature of Firefox.</em:description>
+      </Description>
     </em:localized>
     <em:localized>
-      <RDF:Description em:locale="ja-JP"
-                       em:name="タブキラー"
-                       em:description="Firefoxのタブ機能を無効化します。"
-                       em:homepageURL="http://piro.sakura.ne.jp/xul/_tabkiller.html">
-		<em:translator>Jean-Bernard Marcon</em:translator>
-		<em:translator>Leszek (teo) Życzkowski</em:translator>
-		<em:translator>Mikes Kaszmán István</em:translator>
-     </RDF:Description>
+      <Description>
+        <em:locale>ja-JP</em:locale>
+        <em:name>タブキラー</em:name>
+        <em:description>Firefoxのタブ機能を無効化します。</em:description>
+      </Description>
     </em:localized>
     <em:localized>
-      <RDF:Description em:locale="pl"
-                       em:name="Tab Killer"
-                       em:description="Wyłącza opcję przeglądania w kartach."
-                       em:homepageURL="http://piro.sakura.ne.jp/xul/_tabkiller.html.en">
-		<em:translator>Jean-Bernard Marcon</em:translator>
-		<em:translator>Leszek (teo) Życzkowski</em:translator>
-		<em:translator>Mikes Kaszmán István</em:translator>
-     </RDF:Description>
+      <Description>
+        <em:locale>pl</em:locale>
+        <em:name>Tab Killer</em:name>
+        <em:description>Wyłącza opcję przeglądania w kartach.</em:description>
+      </Description>
     </em:localized>
     <em:localized>
-      <RDF:Description em:locale="hu-HU"
-                       em:name="Tab Killer"
-                       em:description="Lapok használatának teljes mértékű letiltása."
-                       em:homepageURL="http://piro.sakura.ne.jp/xul/_tabkiller.html.en">
-		<em:translator>Jean-Bernard Marcon</em:translator>
-		<em:translator>Leszek (teo) Życzkowski</em:translator>
-		<em:translator>Mikes Kaszmán István</em:translator>
-     </RDF:Description>
+      <Description>
+        <em:locale>hu-HU</em:locale>
+        <em:name>Tab Killer</em:name>
+        <em:description>Lapok használatának teljes mértékű letiltása.</em:description>
+      </Description>
     </em:localized>
-
 
     <em:targetApplication>
       <!-- Firefox -->
-      <RDF:Description em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
-                       em:minVersion="3.0"
-                       em:maxVersion="20.0" />
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>3.0</em:minVersion>
+        <em:maxVersion>20.0</em:maxVersion>
+      </Description>
     </em:targetApplication>
-  </RDF:Description>
-</RDF:RDF>
+  </Description>
+</RDF>
