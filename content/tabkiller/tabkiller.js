@@ -1,4 +1,5 @@
 var TabKiller = {
+        consoleService : Components.classes["@mozilla.org/consoleservice;1"].getService(Components.interfaces.nsIConsoleService),
 
 	BEHAVIOR_ASK                 : -1,
 	BEHAVIOR_REDIRECT_TO_CURRENT : 0,
@@ -22,6 +23,7 @@ var TabKiller = {
 	_PromptService : null,
 
 	getTabs : function(aTabBrowser) {
+		this.consoleService.logStringMessage("tabkiller.getTabs()");
 		var tabs = aTabBrowser.ownerDocument.evaluate(
 				'descendant::*[local-name()="tab"]',
 				aTabBrowser.mTabContainer,
@@ -37,6 +39,7 @@ var TabKiller = {
 	},
 
 	getTabStrip : function(aTabBrowser) {
+		this.consoleService.logStringMessage("tabkiller.getTabStrip()");
 		var strip = aTabBrowser.mStrip;
 		return (strip && strip.localName == 'hbox') ?
 				strip :
@@ -44,14 +47,16 @@ var TabKiller = {
 	},
 
 	stopRendering : function() {
+		this.consoleService.logStringMessage("tabkiller.stopRendering()");
 		window['piro.sakura.ne.jp'].stopRendering.stop();
 	},
 	startRendering : function() {
+		this.consoleService.logStringMessage("tabkiller.startRendering()");
 		window['piro.sakura.ne.jp'].stopRendering.start();
 	},
 
-
 	init : function() {
+		this.consoleService.logStringMessage("tabkiller.init()");
 		window.removeEventListener('load', this, false);
 
 		this.killTabbrowser(document.getElementById('content'));
@@ -89,6 +94,7 @@ var TabKiller = {
 	},
 
 	killTabbrowser : function(aTabBrowser) {
+		this.consoleService.logStringMessage("tabkiller.killTabbrowser()");
 		if ('__tabkiller__initialized' in aTabBrowser) return;
 
 		var tabs = this.getTabs(aTabBrowser);
@@ -134,6 +140,7 @@ var TabKiller = {
 	},
 
 	performTabOpenRequest : function(aTabBrowser, aURI, aReferrer, aCharset) {
+		this.consoleService.logStringMessage("tabkiller.performTabOpenRequest()");
 		var referrer = null,
 			charset = null;
 		if (aReferrer && typeof aReferrer === 'object') {
@@ -179,6 +186,7 @@ var TabKiller = {
 	},
 
 	getBehaviorForRequest : function(aType) {
+		this.consoleService.logStringMessage("tabkiller.getBehaviorForRequest()");
 		var behavior = this.getPref('extensions.tabkiller.tabs.'+aType+'.behavior');
 		if (behavior != this.BEHAVIOR_ASK) return behavior;
 
@@ -211,6 +219,7 @@ var TabKiller = {
 	},
 
 	addWindowToUndoCache : function() {
+		this.consoleService.logStringMessage("tabkiller.addWindowToUndoCache()");
 		const WindowManager = Components
 				.classes['@mozilla.org/appshell/window-mediator;1']
 				.getService(Components.interfaces.nsIWindowMediator);
@@ -253,6 +262,7 @@ var TabKiller = {
 	},
 
 	restoreWindowFromUndoCache : function(aWindow, aIndex) {
+		this.consoleService.logStringMessage("tabkiller.restoreWindowFromUndoCache()");
 		this.stopRendering();
 		this.disable();
 
@@ -341,6 +351,7 @@ var TabKiller = {
 	},
 
 	disable : function() {
+		this.consoleService.logStringMessage("tabkiller.disable()");
 		this.tempDisabled = true;
 		var strip = this.getTabStrip(gBrowser);
 		strip.collapsed = false;
@@ -351,6 +362,7 @@ var TabKiller = {
 	},
 
 	enable : function() {
+		this.consoleService.logStringMessage("tabkiller.enable()");
 		this.tempDisabled = false;
 		var strip = this.getTabStrip(gBrowser);
 		window.setTimeout(function() {
@@ -360,6 +372,7 @@ var TabKiller = {
 	},
 
 	handleEvent : function(aEvent) {
+		this.consoleService.logStringMessage("tabkiller.handleEvent()");
 		switch (aEvent.type) {
 			case 'load':
 				this.init();
