@@ -2,6 +2,8 @@ content	tabkiller	content/tabkiller/
 
 overlay	chrome://browser/content/browser.xul	chrome://tabkiller/content/tabkiller.xul
 
+skin	tabkiller	classic	skin/tabkiller/
+
 locale	tabkiller	en-US	locale/en-US/tabkiller/
 locale	tabkiller	ja-JP	locale/ja-JP/tabkiller/
 locale	tabkiller	fr-FR	locale/fr-FR/tabkiller/
